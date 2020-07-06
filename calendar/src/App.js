@@ -1,15 +1,25 @@
 import React from "react";
-import logo from "./logo.svg";
+import FullCalendar from "@fullcalendar/react";
+import dayGridPlugin from "@fullcalendar/daygrid";
+import moment from "moment";
 import "./App.css";
 import "./index.css";
 
+function getFormattedDate(date) {
+  return moment(date).format("YYYY-MM-DD");
+}
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Calendar Application</p>
-      </header>
+    <div>
+      <FullCalendar
+        plugins={[dayGridPlugin]}
+        initialView="dayGridMonth"
+        events={[
+          { title: "Event 1", date: getFormattedDate(new Date()) },
+          { title: "Event 2", date: getFormattedDate(moment().add(1, "days")) },
+        ]}
+      />
     </div>
   );
 }
