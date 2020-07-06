@@ -12,7 +12,7 @@ This is a POC for how multiple SPAs can be run
 
 - Run `yarn`
 
-- Run `yarn start --https --port 8501`
+- Run `yarn start`
 
 #### Calendar SPA Application
 
@@ -22,7 +22,7 @@ This is a POC for how multiple SPAs can be run
 
 - Run `yarn`
 
-- Run `yarn start --https --port 8502`
+- Run `yarn start`
 
 #### SPA Root Application
 
@@ -31,7 +31,7 @@ This is a POC for how multiple SPAs can be run
 
 - Run `yarn`
 
-- Run `yarn start --https`
+- Run `yarn start`
 
 #### Result
 
