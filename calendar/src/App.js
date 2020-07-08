@@ -12,6 +12,12 @@ function getFormattedDate(date) {
 function App() {
   return (
     <div>
+      <div
+        style={{ textAlign: "center", fontSize: "20px", padding: "15px 10px" }}
+      >
+        <a href="/client">Client</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/calendar">Calendar</a>
+      </div>
       <FullCalendar
         plugins={[dayGridPlugin]}
         initialView="dayGridMonth"
