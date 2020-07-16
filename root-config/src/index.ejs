@@ -4,7 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Root Config</title>
+  <title>Root App</title>
+  <template id="single-spa-layout">
+    <single-spa-router>
+        <div style="font: 20px; padding: 20px;">
+        <a href="/permanent">Permanent</a>
+            &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/jobs">Jobs</a>
+            &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/calendar">Calendar</a>
+        </div>
+
+      <div class="main-content">
+        <route path="calendar">
+            <application name="@medwing/client" props="permanent"></application>
+            <application name="@medwing/calendar"></application>
+        </route>
+        <route path="jobs">
+            <application name="@medwing/client" props="jobs"></application>
+        </route>
+        <route path="cross-border">
+          <h4>Cross Border</h4>
+        </route>
+        <route path="permanent">
+            <application name="@medwing/client" props="permanent"></application>
+        </route>
+      </div>
+    </single-spa-router>
+  </template>
   <!--
     Remove this if you only support browsers that support async/await.
     This is needed by babel to share largeish helper code for compiling async/await in older
