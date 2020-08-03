@@ -13,6 +13,8 @@
         <a href="/jobs">Jobs</a>
             &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
         <a href="/calendar">Calendar</a>
+            &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/rewire">React-rewire</a>
         </div>
 
       <div class="main-content">
@@ -28,6 +30,9 @@
         </route>
         <route path="permanent">
             <application name="@medwing/client" props="permanent"></application>
+        </route>
+        <route path="rewire">
+            <application name="@medwing/rewire"></application>
         </route>
       </div>
     </single-spa-router>
@@ -70,7 +75,8 @@
       "imports": {
         "@medwing/root-config": "//localhost:9000/medwing-root-config.js",
         "@medwing/client": "//localhost:8501/medwing-client.js",
-        "@medwing/calendar": "//localhost:8502/medwing-calendar.js"
+        "@medwing/calendar": "//localhost:8502/medwing-calendar.js",
+        "@medwing/rewire": "//localhost:3000/App.js"
       }
     }
   </script>

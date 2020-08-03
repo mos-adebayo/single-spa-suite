@@ -24,6 +24,16 @@ This is a POC for how multiple SPAs can be run
 
 - Run `yarn start`
 
+#### Calendar SPA Application
+
+- Go to client application folder
+
+  `cd react-rewire-test`
+
+- Run `yarn`
+
+- Run `yarn start`
+
 #### SPA Root Application
 
 - Go to root-config folder
@@ -39,3 +49,4 @@ The application will be accessible `https://localhost:9000`
 
 - Client App `https://localhost:9000/client`
 - Calendar App `https://localhost:9000/calendar`
+- React Rewire App `https://localhost:9000/rewire`

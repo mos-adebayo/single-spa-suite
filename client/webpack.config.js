@@ -8,6 +8,8 @@ module.exports = (webpackConfigEnv) => {
     webpackConfigEnv,
   });
 
+  console.log(defaultConfig, "default config");
+
   return webpackMerge.smart(defaultConfig, {
     // modify the webpack config however you'd like to by adding to this object
     module: {
